@@ -1,3 +1,4 @@
+--upgrade pip
 channels==4.1.0
 dj_database_url==2.2.0
 Django==4.2.13
