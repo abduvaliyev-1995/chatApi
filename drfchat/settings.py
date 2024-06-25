@@ -49,9 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-
-
+    'corsheaders',
     'rest_framework_simplejwt',
     'drf_yasg',
     'channels',
@@ -68,6 +66,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:9090', 'https://chatapi-5cbh.onrender.com'
 ]
 
 ROOT_URLCONF = 'drfchat.urls'
