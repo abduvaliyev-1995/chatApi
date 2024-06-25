@@ -8,3 +8,4 @@ drf_yasg==1.21.7
 djangorestframework==3.15.1
 psycopg2
 psycopg
+whitenoise
