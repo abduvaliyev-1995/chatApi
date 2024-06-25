@@ -71,7 +71,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:9090', 'https://chatapi-5cbh.onrender.com'
+    'http://localhost:9090', 'https://chatapi-5cbh.onrender.com', 'http://chatapi-5cbh.onrender.com'
 ]
 
 ROOT_URLCONF = 'drfchat.urls'
