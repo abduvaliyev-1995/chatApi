@@ -18,8 +18,8 @@ from environ import Env
 env = Env()
 Env.read_env()
 
-# ENVIRONMENT = env('ENVIRONMENT', default="production")
-ENVIRONMENT = "production"
+ENVIRONMENT = env('ENVIRONMENT', default="production")
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -50,8 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'cloudinary_storage',
-    'cloudinary',
+
 
     'rest_framework_simplejwt',
     'drf_yasg',
